@@ -1,4 +1,4 @@
-from flask import Flask, redirect, render_template
+from flask import Flask, redirect, render_template, request
 from counter import Counter
 
 app = Flask(__name__)
@@ -16,4 +16,11 @@ def increment():
 @app.route("/reset", methods=["POST"])
 def reset():
     cnt.reset()
+    return redirect("/")
+
+@app.route("/laskuri", methods=["POST"])
+def laskuri():
+    value = request.form.get("value")
+    if int(value) > 0:
+        cnt.laskuri(int(value))
     return redirect("/")
