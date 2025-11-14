@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 7.3.2 (Python 3.14.0 on win32)" generated="2025-11-14T10:06:28.852523" rpa="false" schemaversion="5">
+<suite id="s1" name="Webcounter" source="C:\Users\Anastasia\webcounter">
+<suite id="s1-s1" name="Src" source="C:\Users\Anastasia\webcounter\src">
+<suite id="s1-s1-s1" name="Tests" source="C:\Users\Anastasia\webcounter\src\tests">
+<suite id="s1-s1-s1-s1" name="Increment" source="C:\Users\Anastasia\webcounter\src\tests\increment.robot">
+<kw name="Open And Configure Browser" owner="resource" type="SETUP">
+<kw name="Set Selenium Speed" owner="SeleniumLibrary">
+<arg>${DELAY}</arg>
+<doc>Sets the delay that is waited after each Selenium command.</doc>
+<status status="PASS" start="2025-11-14T10:06:29.280483" elapsed="0.000622"/>
+</kw>
+<kw name="Open Browser" owner="SeleniumLibrary">
+<msg time="2025-11-14T10:06:29.281775" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<arg>browser=${BROWSER}</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<status status="PASS" start="2025-11-14T10:06:29.281373" elapsed="1.445823"/>
+</kw>
+<status status="PASS" start="2025-11-14T10:06:29.279062" elapsed="1.448613"/>
+</kw>
+<test id="s1-s1-s1-s1-t1" name="At start the counter is zero" line="7">
+<kw name="Go To" owner="SeleniumLibrary">
+<msg time="2025-11-14T10:06:30.740587" level="INFO">Opening url 'http://localhost:5001'</msg>
+<msg time="2025-11-14T10:06:34.052455" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2025-11-14T10:06:34.053814" level="FAIL">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=142.0.7444.163)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6cceda235
+	0x7ff6ccc32650
+	0x7ff6cc9c16dd
+	0x7ff6cc9be228
+	0x7ff6cc9aeba9
+	0x7ff6cc9b09d7
+	0x7ff6cc9af160
+	0x7ff6cc9ae917
+	0x7ff6cc9ae5db
+	0x7ff6cc9ac145
+	0x7ff6cc9ac9dc
+	0x7ff6cc9c59ea
+	0x7ff6cca6c8be
+	0x7ff6cca42b0a
+	0x7ff6cca6baba
+	0x7ff6cca0b0ed
+	0x7ff6cca0bf63
+	0x7ff6ccf05d60
+	0x7ff6cceffe8a
+	0x7ff6ccf21005
+	0x7ff6ccc4d73e
+	0x7ff6ccc54e3f
+	0x7ff6ccc3b7e4
+	0x7ff6ccc3b99f
+	0x7ff6ccc21908
+	0x7ffa6161e8d7
+	0x7ffa6312c53c
+</msg>
+<arg>${HOME_URL}</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="FAIL" start="2025-11-14T10:06:30.739649" elapsed="3.348087">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=142.0.7444.163)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6cceda235
+	0x7ff6ccc32650
+	0x7ff6cc9c16dd
+	0x7ff6cc9be228
+	0x7ff6cc9aeba9
+	0x7ff6cc9b09d7
+	0x7ff6cc9af160
+	0x7ff6cc9ae917
+	0x7ff6cc9ae5db
+	0x7ff6cc9ac145
+	0x7ff6cc9ac9dc
+	0x7ff6cc9c59ea
+	0x7ff6cca6c8be
+	0x7ff6cca42b0a
+	0x7ff6cca6baba
+	0x7ff6cca0b0ed
+	0x7ff6cca0bf63
+	0x7ff6ccf05d60
+	0x7ff6cceffe8a
+	0x7ff6ccf21005
+	0x7ff6ccc4d73e
+	0x7ff6ccc54e3f
+	0x7ff6ccc3b7e4
+	0x7ff6ccc3b99f
+	0x7ff6ccc21908
+	0x7ffa6161e8d7
+	0x7ffa6312c53c
+</status>
+</kw>
+<kw name="Title Should Be" owner="SeleniumLibrary">
+<arg>Laskuri</arg>
+<doc>Verifies that the current page title equals ``title``.</doc>
+<status status="NOT RUN" start="2025-11-14T10:06:34.089490" elapsed="0.000683"/>
+</kw>
+<kw name="Page Should Contain" owner="SeleniumLibrary">
+<arg>nappia painettu 0 kertaa</arg>
+<doc>Verifies that current page contains ``text``.</doc>
+<status status="NOT RUN" start="2025-11-14T10:06:34.091343" elapsed="0.001136"/>
+</kw>
+<status status="FAIL" start="2025-11-14T10:06:30.727996" elapsed="3.366048">WebDriverException: Message: unknown error: net::ERR_CONNECTION_REFUSED
+  (Session info: chrome=142.0.7444.163)
+Stacktrace:
+Symbols not available. Dumping unresolved backtrace:
+	0x7ff6cceda235
+	0x7ff6ccc32650
+	0x7ff6cc9c16dd
+	0x7ff6cc9be228
+	0x7ff6cc9aeba9
+	0x7ff6cc9b09d7
+	0x7ff6cc9af160
+	0x7ff6cc9ae917
+	0x7ff6cc9ae5db
+	0x7ff6cc9ac145
+	0x7ff6cc9ac9dc
+	0x7ff6cc9c59ea
+	0x7ff6cca6c8be
+	0x7ff6cca42b0a
+	0x7ff6cca6baba
+	0x7ff6cca0b0ed
+	0x7ff6cca0bf63
+	0x7ff6ccf05d60
+	0x7ff6cceffe8a
+	0x7ff6ccf21005
+	0x7ff6ccc4d73e
+	0x7ff6ccc54e3f
+	0x7ff6ccc3b7e4
+	0x7ff6ccc3b99f
+	0x7ff6ccc21908
+	0x7ffa6161e8d7
+	0x7ffa6312c53c
+</status>
+</test>
+<kw name="Close Browser" owner="SeleniumLibrary" type="TEARDOWN">
+<doc>Closes the current browser.</doc>
+<status status="PASS" start="2025-11-14T10:06:34.152276" elapsed="2.623279"/>
+</kw>
+<status status="FAIL" start="2025-11-14T10:06:28.959618" elapsed="7.816275"/>
+</suite>
+<status status="FAIL" start="2025-11-14T10:06:28.932533" elapsed="7.855226"/>
+</suite>
+<status status="FAIL" start="2025-11-14T10:06:28.914449" elapsed="7.884576"/>
+</suite>
+<status status="FAIL" start="2025-11-14T10:06:28.866296" elapsed="7.948045"/>
+</suite>
+<statistics>
+<total>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat name="Webcounter" id="s1" pass="0" fail="1" skip="0">Webcounter</stat>
+<stat name="Src" id="s1-s1" pass="0" fail="1" skip="0">Webcounter.Src</stat>
+<stat name="Tests" id="s1-s1-s1" pass="0" fail="1" skip="0">Webcounter.Src.Tests</stat>
+<stat name="Increment" id="s1-s1-s1-s1" pass="0" fail="1" skip="0">Webcounter.Src.Tests.Increment</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>

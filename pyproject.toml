@@ -5,11 +5,23 @@ description = ""
 authors = [
     {name = "petrovaana",email = "petrova.anastasiahusu@gmail.com"}
 ]
-readme = "README.md"
-requires-python = ">=3.14"
+license = {text = "MIT"}
+requires-python = "^3.12"
+
 dependencies = [
+    "flask (>=3.1.2,<4.0.0)",
+    "selenium (>=4.38.0,<5.0.0)",
+    "robotframework-seleniumlibrary (>=6.8.0,<7.0.0)"
 ]
 
+[dependency-groups]
+dev = [
+    "robotframework (>=7.3.2,<8.0.0)",
+    "robotframework-seleniumlibrary (>=6.8.0,<7.0.0)"
+]
+
+[tool.poetry]
+package-mode = false
 
 [build-system]
 requires = ["poetry-core>=2.0.0,<3.0.0"]
